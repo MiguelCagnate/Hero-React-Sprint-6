@@ -1,3 +1,10 @@
+import styled from "styled-components"
+
 export const x = styled.p`
-text-align: center;
+textAlign: center;
+fontSize: 39px;
+fontFamily: Verdana, Geneva, Tahoma, sans-serif;
+backgroundColor: transparent;
+color: salmon;
+borderRadius: 15px;
 `
