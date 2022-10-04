@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { x } from "./components/styled"; 
 import styled from "styled-components";
 import { Frases } from "./data/data";
 
@@ -7,16 +5,17 @@ const StyledP = styled.p`
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color:aquamarine;
-    color: black;
+    color: aliceblue;
     border-radius: 35px;
     margin: 15px;
     padding: 10px;
-    text-shadow: 2px 2px 8px #FF0000;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
 
 `
 
 
-function App() {
+export function App() {
 
 
   return (
@@ -30,4 +29,4 @@ function App() {
   ));
 }
 
-export default App;
+
