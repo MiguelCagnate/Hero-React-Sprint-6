@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Hero👨‍🚀-React⚛️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>Ex I🚀</h3>
+En este primer ejercicio, crearemos un componente que se encargará de renderizar una frase, y le importaremos y usaremos en el componente principal App.
 
-## Available Scripts
+Tienes que llevar a cabo los siguientes pasos:
 
-In the project directory, you can run:
+1. Crear la carpeta componentes.
 
-### `npm start`
+2. Crear la carpeta escena dentro de la carpeta componentes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Dentro de la carpeta escena implementaremos el primer componente. Para ello debes crear el archivo Escena.js. Este primer componente sólo debe devolver el siguiente string:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+"Our hero was floating through outer space when he spotted a spaceship in the distance"
 
-### `npm test`
+4. Ya tenemos nuestro primer componente creado, pero todavía no se mostrará la frase. Para ello utilizaremos nuestro flamante componente Escena. En el return del componente app debes utilizar el componente Escena.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+--------------------------------------------------------------------
+<h3>Ex II🚀</h3>
 
-### `npm run build`
+¡GENIAL!, ya tienes el primer componente creado y funcionando. Por el momento sólo se muestra una frase, en este ejercicio haremos que se muestren todas las frases de la historia.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para ello, debes llevar a cabo las siguientes tareas:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Leeremos los datos de un archivo JSON o JS, con los textos de la historia en el componente App:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[
+"Our hero was floating through outer space when he spotted a spaceship in the distance,"
+   "He was curious about the interior of the ship and began to inspect it. He came to a room with two doors.",
+   "The hero decided to go through the door that led him home,"
+   “Meanwhile, other heroes were not so lucky in their choice…”
+]
+1. Debe pasarse por cerca cada uno de los textos de la historia al componente Escena. (El componente escena renderizará una sola línea de texto).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Modificaremos el componente Escena para mostrar todas las líneas de texto obtenidas del componente padre App mediante props.
