@@ -11,21 +11,16 @@ const StyledP = styled.p`
     padding: 10px;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
-
 `
-
-
 export function App() {
-
-
   return (
     Frases.map((element, index) =>
-    <StyledP>
-<p key={index}>
-    {element}
-    </p>
+   
+<div key={index}> 
+<StyledP>{element}</StyledP>
+</div>
 
-    </StyledP>
+  
   ));
 }
 
