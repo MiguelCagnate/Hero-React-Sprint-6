@@ -5,7 +5,7 @@ import { Buttons } from "../../styled"
   return (
     <Buttons>
     <button>Previous</button>
-     <button>Next</button>
+    <button>Next</button>
     </Buttons>
   )
 

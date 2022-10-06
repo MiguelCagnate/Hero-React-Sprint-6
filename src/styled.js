@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
-export const Buttons = styled.div`
+export const Buttons = styled.button`
+
   font-size: 19px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: aquamarine;
-  color: aliceblue;
+  background-color: aliceblue;
+  color: blue;
   border-radius: 35px;
   margin: 15px;
   padding: 10px;
+  text-align: center;
+  align-items: center;
   `
 
-export const Paragraph = styled.div`
+export const p = styled.div`
   font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: aqua;
@@ -22,3 +25,5 @@ export const Paragraph = styled.div`
   text-align: center;
   border-style: groove;
 `;
+
+
