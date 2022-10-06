@@ -27,9 +27,19 @@ export const p = styled.div`
 
 
 export const BackgroundPage = styled.div`
-font-size: 39px;
+font-size: 29px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: white;
+color: black;
 font-style: italic; 
 text-align: center;
+`
+export const buttonStart = styled.div`
+font-size: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: aliceblue;
+  color: blue;
+  border-radius: 35px;
+  margin: 25px;
+  padding: 15px;
+  text-align: center;
 `

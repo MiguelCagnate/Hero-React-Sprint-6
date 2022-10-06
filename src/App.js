@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Frases } from "./data/data";
-import { BackgroundPage, Buttons } from "./styled";
+import { BackgroundPage, Buttons, buttonStart } from "./styled";
 import "./components/Escena/ChangeColor.css";
+
 
 export function App() {
   const [Change, setChange] = useState(0);
@@ -26,7 +27,8 @@ export function App() {
     <BackgroundPage>
   <h1>Benvinguts</h1>
    <p>Aquesta és la història d'un superheroi galàctic </p>
-   <button type='button'>Start</button> <br/> <br/> <br/>   
+   <><button type='button'className="buttonStart">Start</button> </><br/> <br/> <br/> 
+     
   </BackgroundPage>
 
 
