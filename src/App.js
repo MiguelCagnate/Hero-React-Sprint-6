@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Frases } from "./data/data";
-import { Buttons } from "./styled";
+import { BackgroundPage, Buttons } from "./styled";
 import "./components/Escena/ChangeColor.css";
 
 export function App() {
@@ -20,11 +20,16 @@ export function App() {
     </p>
   ));
 
-
-
-  
   return (
+    
     <div>
+    <BackgroundPage>
+  <h1>Benvinguts</h1>
+   <p>Aquesta és la història d'un superheroi galàctic </p>
+   <button type='button'>Start</button> <br/> <br/> <br/>   
+  </BackgroundPage>
+
+
       <Buttons onClick={(e) => changeButton(e, "PREVIOUS")} type="button">
         Previous
       </Buttons>
