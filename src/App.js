@@ -25,18 +25,19 @@ export function App() {
     
     <div>
     <BackgroundPage>
-  <h1>Benvinguts</h1>
-   <p>Aquesta és la història d'un superheroi galàctic </p>
-   <><button type='button'className="buttonStart">Start</button> </><br/> <br/> <br/> 
-     
-  </BackgroundPage>
-
+   <h1>Benvinguts</h1>
+   <p>Aquesta és la història d'un superheroi galàctic</p>   
+  <button type='button'> <buttonStart>START!▶️</buttonStart></button>
+   <br/><br/><br/>      
+   </BackgroundPage>
+   
+   <br/><br/><br/> 
 
       <Buttons onClick={(e) => changeButton(e, "PREVIOUS")} type="button">
-        Previous
+      ⏪Previous
       </Buttons>
       <Buttons onClick={(e) => changeButton(e, "NEXT")} type="button">
-        Next
+        Next⏭
       </Buttons>
       <>{frases}</>
     </div>
