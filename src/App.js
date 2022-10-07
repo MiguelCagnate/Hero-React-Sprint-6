@@ -45,18 +45,20 @@ export function App() {
         </>
       ) : (
         <BackgroundPage>
-        <br></br><br></br><br></br><br></br><br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           <h1>Benvinguts</h1>
           <h3>Aquesta és la història d'un superheroi galàctic 🦹‍♀️</h3>
           <ButtonStart type="button" onClick={() => toggleDetail(true)}>
             START!▶️
           </ButtonStart>
-          <br></br><br></br>
+          <br></br>
+          <br></br>
         </BackgroundPage>
       )}
     </div>
   );
 }
-
-
-

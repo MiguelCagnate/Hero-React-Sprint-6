@@ -1,35 +1,20 @@
-# Hero👨‍🚀-React⚛️
+# **Hero👨‍🚀-React⚛️ / Sprint 6**
 
-<h3>Ex I🚀</h3>
-En este primer ejercicio, crearemos un componente que se encargará de renderizar una frase, y le importaremos y usaremos en el componente principal App.
+<h2><i>En esta entrega pondremos en práctica los conceptos básicos de React.🚀<i/></h2>
 
-Tienes que llevar a cabo los siguientes pasos:
+<h4>
 
-1. Crear la carpeta componentes.
+Un/@ cliente/@ que tiene como producto principal una web de gestión empresarial desarrollada con React, nos ha pedido que desarrollemos un tutorial, en el que:
 
-2. Crear la carpeta escena dentro de la carpeta componentes.
+ <ul>
+ <li>Mediante dos botones los nuevos usuarios puedan avanzar y retroceder en los consejos
+ </li> 
+ <li>
+ Se modifican el texto indicado y la imamgen de fondo.</li></ul></h4>
 
-3. Dentro de la carpeta escena implementaremos el primer componente. Para ello debes crear el archivo Escena.js. Este primer componente sólo debe devolver el siguiente string:
 
-"Our hero was floating through outer space when he spotted a spaceship in the distance"
+En el ejercicio anterior utilizamos las siguientes herramientas de programación:
 
-4. Ya tenemos nuestro primer componente creado, pero todavía no se mostrará la frase. Para ello utilizaremos nuestro flamante componente Escena. En el return del componente app debes utilizar el componente Escena.
 
---------------------------------------------------------------------
-<h3>Ex II🚀</h3>
 
-¡GENIAL!, ya tienes el primer componente creado y funcionando. Por el momento sólo se muestra una frase, en este ejercicio haremos que se muestren todas las frases de la historia.
-
-Para ello, debes llevar a cabo las siguientes tareas:
-
-1. Leeremos los datos de un archivo JSON o JS, con los textos de la historia en el componente App:
-
-[
-"Our hero was floating through outer space when he spotted a spaceship in the distance,"
-   "He was curious about the interior of the ship and began to inspect it. He came to a room with two doors.",
-   "The hero decided to go through the door that led him home,"
-   “Meanwhile, other heroes were not so lucky in their choice…”
-]
-1. Debe pasarse por cerca cada uno de los textos de la historia al componente Escena. (El componente escena renderizará una sola línea de texto).
-
-2. Modificaremos el componente Escena para mostrar todas las líneas de texto obtenidas del componente padre App mediante props.
+ *FAVOR DESCARGAR NODE PARA PONER EN MARCHA EL PROGRAMA (npm install en nuestro caso)
