@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Frases } from "./data/data";
 import { BackgroundPage, Buttons, ButtonStart, Paragraph } from "./styled";
 import "./components/Escena/ChangeColor.css";
 
 export function App() {
   const [Change, setChange] = useState(0);
+  const [isDetailVisible, toggleDetail] = useState(false);
+
   const changeButton = (e, text) => {
     e.preventDefault();
     if (text === "NEXT" && Change !== 3) {
@@ -14,33 +16,42 @@ export function App() {
       return setChange(Change - 1);
     }
   };
+
+  useEffect(() => {
+    if (isDetailVisible) {
+      const images = ["one", "two", "three", "four"];
+      const bg = images[Change];
+      document.body.style.backgroundImage = `url(/img/${bg}.jpg)`;
+    }
+  }, [Change, isDetailVisible]);
+
   const frases = Frases.map((element, index) => (
-    <Paragraph key={index} className={`${index === Change ? "nuColor" :" "}`}>
-       
-     {element}
-    
+    <Paragraph key={index} className={`${index === Change ? "nuColor" : " "}`}>
+      {element.txt}
     </Paragraph>
-   
   ));
 
   return (
-    
     <div>
-    <BackgroundPage>
-   <h1>Benvinguts</h1>
-   <>Aquesta és la història d'un superheroi galàctic 🦹‍♀️</><br/>      
-   </BackgroundPage>
-   <ButtonStart type='button'>START!▶️</ButtonStart>
-   
-   <br/><br/>  
-
-      <Buttons onClick={(e) => changeButton(e, "PREVIOUS")} type="button">
-      ⏪Previous
-      </Buttons>
-      <Buttons onClick={(e) => changeButton(e, "NEXT")} type="button">
-        Next⏭
-      </Buttons>
-      <>{frases}</>
+      {isDetailVisible ? (
+        <>
+          <Buttons onClick={(e) => changeButton(e, "PREVIOUS")} type="button">
+            ⏪Previous
+          </Buttons>
+          <Buttons onClick={(e) => changeButton(e, "NEXT")} type="button">
+            Next⏭
+          </Buttons>
+          {frases}
+        </>
+      ) : (
+        <BackgroundPage>
+          <h1>Benvinguts</h1>
+          <>Aquesta és la història d'un superheroi galàctic 🦹‍♀️</>
+          <ButtonStart type="button" onClick={() => toggleDetail(true)}>
+            START!▶️
+          </ButtonStart>
+        </BackgroundPage>
+      )}
     </div>
   );
 }

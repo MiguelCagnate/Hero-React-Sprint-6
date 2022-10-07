@@ -35,7 +35,7 @@ export const BackgroundPage = styled.div`
   color: black;
   font-style: italic;
   text-align: center; 
-  background-image: url(/src/captain_future.jpg);
+  background-image: url('/captain_future.jpg');
   background-repeat: no-repeat;
 `;
 export const ButtonStart = styled.div`
