@@ -13,7 +13,6 @@ Un/@ cliente/@ que tiene como producto principal una web de gestión empresarial
  Se modifican el texto indicado y la imamgen de fondo.</li></ul></h4>
 
 
-En el ejercicio anterior utilizamos las siguientes herramientas de programación:
 
 
 
