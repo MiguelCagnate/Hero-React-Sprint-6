@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Buttons = styled.button`
-background-color: aliceblue;
+background-color: transparent;
   border: 1px;
-  color: black;
+  color: aliceblue;
   padding: 15px 32px;
   text-align: center;
+  text-shadow: 3px 3px 3px #ababab;
   margin: 4px 6px;
   cursor: pointer;
   display: inline-block;  
@@ -14,7 +15,17 @@ background-color: aliceblue;
   align-items: center; 
   font-size: 19px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  width: 49%; 
+  width: 49%;
+  .Buttons { 
+  border: none; 
+  transition: 0.3s;
+}
+
+.Buttons:hover {
+  background-color: #3e8e41;
+  color: white;
+} 
+  
 `;
 
 export const Paragraph = styled.div`
@@ -27,23 +38,30 @@ export const Paragraph = styled.div`
   border-width: 1px;  
   text-align: center;
   border-style: groove;
+
+  
 `;
 
 export const BackgroundPage = styled.div`
-  font-size: 23px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-  font-style: italic;
+  font-size: 33px;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #ababab;
+  color: #006ee9;  
   text-align: center; 
-  background-image: url('/captain_future.jpg');
-  background-repeat: no-repeat;
-`;
+  background-image: url('/captain_future.jpg');      
+  background-size: cover;
+  background-repeat: no-repeat; 
+  border-radius: 100px; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+ `;
 export const ButtonStart = styled.div`
   font-size: 19px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   background-color: aliceblue;
-  color: blue;
+  color: #006ee9;
   margin: 19px; 
   border-radius: 35px;
   margin-left: 40%;
@@ -54,6 +72,6 @@ export const ButtonStart = styled.div`
   align-items: center;     
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   cursor: pointer;
-  
+    
 `;
 
