@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Frases } from "./data/data";
-import { BackgroundPage, Buttons, buttonStart } from "./styled";
+import { BackgroundPage, Buttons, ButtonStart, Paragraph } from "./styled";
 import "./components/Escena/ChangeColor.css";
-
 
 export function App() {
   const [Change, setChange] = useState(0);
@@ -16,9 +15,12 @@ export function App() {
     }
   };
   const frases = Frases.map((element, index) => (
-    <p key={index} className={`${index === Change ? "nuColor" : ""}`}>
-      {element}
-    </p>
+    <Paragraph key={index} className={`${index === Change ? "nuColor" :" "}`}>
+       
+     {element}
+    
+    </Paragraph>
+   
   ));
 
   return (
@@ -26,12 +28,11 @@ export function App() {
     <div>
     <BackgroundPage>
    <h1>Benvinguts</h1>
-   <p>Aquesta és la història d'un superheroi galàctic</p>   
-  <button type='button'> <buttonStart>START!▶️</buttonStart></button>
-   <br/><br/><br/>      
+   <>Aquesta és la història d'un superheroi galàctic 🦹‍♀️</><br/>      
    </BackgroundPage>
+   <ButtonStart type='button'>START!▶️</ButtonStart>
    
-   <br/><br/><br/> 
+   <br/><br/>  
 
       <Buttons onClick={(e) => changeButton(e, "PREVIOUS")} type="button">
       ⏪Previous

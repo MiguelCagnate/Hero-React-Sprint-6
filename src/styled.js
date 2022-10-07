@@ -1,47 +1,59 @@
 import styled from "styled-components";
 
 export const Buttons = styled.button`
-  font-size: 19px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: aliceblue;
-  color: blue;
-  border-radius: 9px;
-  margin: 5px;
-  padding: 23px;
+background-color: aliceblue;
+  border: 1px;
+  color: black;
+  padding: 15px 32px;
   text-align: center;
-  width: 942px; 
-  align-self: auto;  
+  margin: 4px 6px;
+  cursor: pointer;
+  display: inline-block;  
+  border-style: groove; 
+  border-radius: 9px; 
+  align-items: center; 
+  font-size: 19px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 49%; 
 `;
 
-export const p = styled.div`
+export const Paragraph = styled.div`
   font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: aqua;
-  color: aliceblue;
+  color: black;
   border-radius: 35px;
   margin: 15px;
   padding: 10px;
-  text-shadow: 2px 2px 4px #000000;
+  border-width: 1px;  
   text-align: center;
   border-style: groove;
 `;
 
 export const BackgroundPage = styled.div`
-  font-size: 29px;
+  font-size: 23px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   font-style: italic;
-  text-align: center;
+  text-align: center; 
+  background-image: url(/src/captain_future.jpg);
+  background-repeat: no-repeat;
 `;
-export const buttonStart = styled.button`
+export const ButtonStart = styled.div`
   font-size: 19px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
   background-color: aliceblue;
   color: blue;
+  margin: 19px; 
   border-radius: 35px;
-  margin: 25px;
-  padding: 15px;
-  text-align: center;  
-  align-items: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  
 `;
 
