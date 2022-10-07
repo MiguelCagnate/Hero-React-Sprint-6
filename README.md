@@ -1,3 +1,5 @@
+![pag1](https://user-images.githubusercontent.com/94227693/194631376-4fa217b7-0497-4c1c-b459-16b9cf251c6f.png)
+![welcomepag](https://user-images.githubusercontent.com/94227693/194631387-604396a7-6cd3-4a9e-bd95-30d6eca0674d.png)
 # **Hero👨‍🚀-React⚛️ / Sprint 6**
 
 <h2><i>En esta entrega pondremos en práctica los conceptos básicos de React.🚀<i/></h2>
