@@ -22,6 +22,7 @@ export function App() {
       const images = ["one", "two", "three", "four"];
       const bg = images[Change];
       document.body.style.backgroundImage = `url(/img/${bg}.jpg)`;
+      document.body.style.backgroundSize = 'cover';
     }
   }, [Change, isDetailVisible]);
 
@@ -44,19 +45,12 @@ export function App() {
           {frases}
         </>
       ) : (
-        <BackgroundPage>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+        <BackgroundPage>         
           <h1>Benvinguts</h1>
           <h3>Aquesta és la història d'un superheroi galàctic 🦹‍♀️</h3>
           <ButtonStart type="button" onClick={() => toggleDetail(true)}>
             START!▶️
           </ButtonStart>
-          <br></br>
-          <br></br>
         </BackgroundPage>
       )}
     </div>

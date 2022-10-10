@@ -8,24 +8,14 @@ background-color: transparent;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab;
   margin: 4px 6px;
-  cursor: pointer;
-  display: inline-block;  
+  cursor: pointer;   
   border-style: groove; 
   border-radius: 9px; 
   align-items: center; 
   font-size: 19px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   width: 49%;
-  .Buttons { 
-  border: none; 
-  transition: 0.3s;
-}
-
-.Buttons:hover {
-  background-color: #3e8e41;
-  color: white;
-} 
-  
+  background: cover;  
 `;
 
 export const Paragraph = styled.div`
@@ -37,22 +27,21 @@ export const Paragraph = styled.div`
   padding: 10px;
   border-width: 1px;  
   text-align: center;
-  border-style: groove;
-
-  
+  border-style: groove;    
 `;
 
 export const BackgroundPage = styled.div`
-  font-size: 33px;
+  margin: 95px;
+  padding: 95px; 
+  font-size: 39px;
   font-family: monospace;
   font-weight: bold;
   text-shadow: 3px 3px 3px #ababab;
   color: #006ee9;  
   text-align: center; 
-  background-image: url('/captain_future.jpg');      
-  background-size: cover;
-  background-repeat: no-repeat; 
-  border-radius: 100px; 
+  background-image: url('/captain_future.jpg');  
+  background-image: cover;    
+  border-radius: 70px; 
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
  `;
@@ -66,12 +55,11 @@ export const ButtonStart = styled.div`
   border-radius: 35px;
   margin-left: 40%;
   margin-right: 40%;
-  padding: 25px;
+  padding: 35px;
   display: flex;
   justify-content: center;
   align-items: center;     
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  cursor: pointer;
-    
+  cursor: pointer;    
 `;
 
