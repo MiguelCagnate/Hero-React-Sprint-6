@@ -18,7 +18,7 @@ Un@ client@ que tiene como producto principal una web de gestión empresarial de
 
  *FAVOR DESCARGAR NODE PARA PONER EN MARCHA EL PROGRAMA (npm install en nuestro caso)
  
-![welcomepag](https://user-images.githubusercontent.com/94227693/194631387-604396a7-6cd3-4a9e-bd95-30d6eca0674d.png)
- 
- ![pag1](https://user-images.githubusercontent.com/94227693/194631376-4fa217b7-0497-4c1c-b459-16b9cf251c6f.png)
- 
+
+ ![welcome_page](https://user-images.githubusercontent.com/94227693/194828657-ea2acaa5-fab4-4267-bf11-31a4f3a89945.png)
+
+![one_page](https://user-images.githubusercontent.com/94227693/194828672-0a270f5e-c8f8-4164-a5a3-5cfb94a3de24.png)
