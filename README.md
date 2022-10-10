@@ -4,7 +4,7 @@
 
 <h4>
 
-Un/@ cliente/@ que tiene como producto principal una web de gestión empresarial desarrollada con React, nos ha pedido que desarrollemos un tutorial, en el que:
+Un@ client@ que tiene como producto principal una web de gestión empresarial desarrollada con React, nos ha pedido que desarrollemos un tutorial, en el que:
 
  <ul>
  <li>Mediante dos botones los nuevos usuarios puedan avanzar y retroceder en los consejos
